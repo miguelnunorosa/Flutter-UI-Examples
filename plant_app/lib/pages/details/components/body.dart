@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant_app/pages/details/components/bottom_buttons.dart';
 import 'package:plant_app/pages/details/components/image_and_icons.dart';
 import 'package:plant_app/pages/details/components/name_and_price.dart';
 import 'package:plant_app/settings/constants.dart';
@@ -9,18 +10,17 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return SingleChildScrollView(
       child: Column(
         children: [
           ImageAndIcons(),
           NameAndPrice(name: "Samantha", country: "Portugal", price: 222),
+          SizedBox(height: KDEFAULTPADDING),
+          BottomButtons(),
+          SizedBox(height: 2),
         ],
       ),
     );
   }
 }
-
-
-
 
