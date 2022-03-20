@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:plant_app/pages/home/widgets/body.dart';
+import 'package:plant_app/pages/home/components/body.dart';
 import 'package:plant_app/settings/constants.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -14,15 +14,14 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  AppBar buildAppBar(){
+
+  AppBar buildAppBar() {
     return AppBar(
       elevation: 0,
       leading: IconButton(
-          icon: SvgPicture.asset(ICON_MENU),
-          onPressed: (){}),
+        icon: SvgPicture.asset(ICON_MENU),
+        onPressed: (){},
+      ),
     );
   }
-
-
-
 }

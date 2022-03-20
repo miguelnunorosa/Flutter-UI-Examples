@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:plant_app/pages/home/home.dart';
-import 'package:plant_app/settings/constants.dart';
+import 'settings/constants.dart';
+import 'pages/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Plant App',
       theme: ThemeData(
-        scaffoldBackgroundColor: kBackgroundColor,
-        primaryColor: kPrimaryColor,
-        textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
+        primaryColor: KPRIMARYCOLOR,
+        scaffoldBackgroundColor: KBACKGROUNDCOLOR,
+        textTheme: Theme.of(context).textTheme.apply(bodyColor: KTEXTCOLOR),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const HomeScreen(),
