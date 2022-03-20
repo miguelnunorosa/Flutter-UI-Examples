@@ -19,7 +19,13 @@ class Body extends StatelessWidget {
         children: [
           headerWithSearch(size: size),
           TitleWithMoreButton(title: "Recomended", press: (){}),
-          RecomendedPlantCard(size: size),
+          RecomendedPlantCard(
+            title: "MERDA",
+            country: "Portugal",
+            image: IMG_IMAGE1,
+            price: 110,
+            press: (){print("MERDA");},
+          ),
         ],
       ),
     );
