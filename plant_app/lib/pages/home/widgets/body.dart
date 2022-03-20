@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:plant_app/pages/home/widgets/headerWithSearchBox.dart';
 import 'package:plant_app/settings/constants.dart';
 
 class Body extends StatelessWidget {
@@ -15,16 +16,7 @@ class Body extends StatelessWidget {
           height: size.height * 0.2, //cover 20% of our total height
           child: Stack(
             children: [
-              Container(
-                height: size.height * 0.2 - 27,
-                decoration: const BoxDecoration(
-                    color: kPrimaryColor,
-                    borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(36),
-                        bottomRight: Radius.circular(36),
-                    ),
-                ),
-              ),
+              headerWithSearchBox(size: size),
               Positioned(
                 bottom: 0, left: 0, right: 0,
                 child: Container(
@@ -55,6 +47,7 @@ class Body extends StatelessWidget {
                             //suffixIcon: SvgPicture.asset(ICON_SEARCH),
                           ),
                           style: TextStyle(color: kPrimaryColor.withOpacity(0.5)),
+                          onChanged: (value){},
                         ),
                       ),
                       SvgPicture.asset(ICON_SEARCH),
@@ -69,3 +62,5 @@ class Body extends StatelessWidget {
     );
   }
 }
+
+
