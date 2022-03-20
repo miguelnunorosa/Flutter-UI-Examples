@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+//titles
+const String APPTITLE = "Plants";
+
 
 //main colors to app
 const KPRIMARYCOLOR = Color(0xFF0C9869);

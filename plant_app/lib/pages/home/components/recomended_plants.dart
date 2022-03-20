@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant_app/pages/details/details_screen.dart';
 import 'package:plant_app/settings/constants.dart';
 import 'recomended_plant_card.dart';
 
@@ -22,21 +23,48 @@ class RecomendedPlants extends StatelessWidget {
             country: "Portugal",
             image: IMG_IMAGE1,
             price: 110,
-            press: (){},
+            press: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsScreen(
+                    //
+                  ),
+                ),
+              );
+            },
           ),
           RecomendedPlantCard(
             title: "Angelica",
             country: "Italy",
             image: IMG_IMAGE2,
             price: 200,
-            press: (){},
+            press: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsScreen(
+                    //
+                  ),
+                ),
+              );
+            },
           ),
           RecomendedPlantCard(
             title: "OTPX",
             country: "Ukrain",
             image: IMG_IMAGE3,
             price: 310,
-            press: (){},
+            press: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsScreen(
+                    //
+                  ),
+                ),
+              );
+            },
           ),
         ],
       ),
