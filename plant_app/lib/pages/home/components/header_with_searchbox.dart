@@ -14,6 +14,7 @@ class headerWithSerch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.only( bottom: KDEFAULTPADDING * 2.5 ),
       height: size.height * 0.2, //cover 20% of total screen height
       child: Stack(
         children: [
