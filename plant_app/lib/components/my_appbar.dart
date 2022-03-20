@@ -18,6 +18,7 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget{
         icon: SvgPicture.asset(ICON_MENU),
         onPressed: (){},
       ),
+      //shape: const RoundedRectangleBorder(borderRadius: Radius.circular(63),),
     );
   }
 
