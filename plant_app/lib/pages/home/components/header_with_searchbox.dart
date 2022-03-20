@@ -69,12 +69,13 @@ class headerWithSearch extends StatelessWidget {
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: "Search...",
-                        hintStyle: TextStyle( color: KPRIMARYCOLOR.withOpacity(0.3)),
+                        hintStyle: TextStyle(color: KPRIMARYCOLOR.withOpacity(0.3)),
                         enabledBorder: InputBorder.none,
                         focusedBorder: InputBorder.none,
                         //suffixIcon: SvgPicture.asset(ICON_SEARCH),
                       ),
                       style: TextStyle(color: KPRIMARYCOLOR.withOpacity(0.5)),
+                      autocorrect: false,
                       onChanged: (value){},
                     ),
                   ),
