@@ -3,8 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:plant_app/settings/constants.dart';
 
 
-class headerWithSerch extends StatelessWidget {
-  const headerWithSerch({
+class headerWithSearch extends StatelessWidget {
+  const headerWithSearch({
     Key? key,
     required this.size,
   }) : super(key: key);
