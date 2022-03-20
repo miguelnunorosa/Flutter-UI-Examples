@@ -4,9 +4,10 @@ import 'package:plant_app/settings/constants.dart';
 
 class IconCard extends StatelessWidget {
   const IconCard({
-    Key? key,
+    Key? key, required this.icon,
   }) : super(key: key);
 
+  final String icon;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class IconCard extends StatelessWidget {
 
     return Container(
       margin: EdgeInsets.symmetric(vertical: _size.height * 0.03),
-      padding: EdgeInsets.all(KDEFAULTPADDING / 2),
+      padding: const EdgeInsets.all(KDEFAULTPADDING / 2),
       height: 62,
       width: 62,
       decoration: BoxDecoration(
@@ -34,7 +35,7 @@ class IconCard extends StatelessWidget {
           ),
         ],
       ),
-      child: SvgPicture.asset(ICON_SUN),
+      child: SvgPicture.asset(icon),
     );
   }
 }
