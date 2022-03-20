@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'settings/constants.dart';
 import 'pages/home/home_screen.dart';
 
@@ -12,9 +13,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIMode (SystemUiMode.manual, overlays: []);
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Plant App',
       theme: ThemeData(
         primaryColor: KPRIMARYCOLOR,
         scaffoldBackgroundColor: KBACKGROUNDCOLOR,

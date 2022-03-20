@@ -18,7 +18,7 @@ class TitleWithMoreButton extends StatelessWidget {
       child: Row(
         children: [
           TitleWithCustomUnderline(text: title),
-          Spacer(),
+          const Spacer(),
           FlatButton(
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             color: KPRIMARYCOLOR,

@@ -12,6 +12,7 @@ class FeaturedPlants extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
+      padding: const EdgeInsets.only(right: KDEFAULTPADDING),
       child: Row(
         children: [
           FeaturedPlantCard(
