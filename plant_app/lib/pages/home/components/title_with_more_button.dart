@@ -5,8 +5,11 @@ import 'package:plant_app/settings/constants.dart';
 
 class TitleWithMoreButton extends StatelessWidget {
   const TitleWithMoreButton({
-    Key? key,
+    Key? key, required this.title, required this.press,
   }) : super(key: key);
+
+  final String title;
+  final Function() press;
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +17,12 @@ class TitleWithMoreButton extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: KDEFAULTPADDING),
       child: Row(
         children: [
-          TitleWithCustomUnderline(text: 'Recomended'),
+          TitleWithCustomUnderline(text: title),
           Spacer(),
           FlatButton(
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             color: KPRIMARYCOLOR,
-            onPressed: (){},
+            onPressed: press,
             child: Text("More",
               style: TextStyle(color: Colors.white),
             ),

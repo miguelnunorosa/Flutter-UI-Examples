@@ -17,7 +17,10 @@ class Body extends StatelessWidget {
       child: Column(
         children: [
           headerWithSearch(size: size),
-          TitleWithMoreButton(),
+          TitleWithMoreButton(
+            title: "Recomended",
+            press: (){},
+          ),
         ],
       ),
     );
