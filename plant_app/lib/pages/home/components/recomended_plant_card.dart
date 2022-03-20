@@ -20,7 +20,7 @@ class RecomendedPlantCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    Size size = MediaQuery.of(context).size;
+    Size _size = MediaQuery.of(context).size;
 
     return Container( //cover 40% of our total screen width
       margin: const EdgeInsets.only(
@@ -28,7 +28,7 @@ class RecomendedPlantCard extends StatelessWidget {
         top: KDEFAULTPADDING / 2,
         bottom: KDEFAULTPADDING * 2.5,
       ),
-      width: size.width * 0.4,
+      width: _size.width * 0.4,
       child: GestureDetector(
         onTap: press,
         child: Column(

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:plant_app/pages/home/components/featured_plants.dart';
 import 'package:plant_app/pages/home/components/header_with_searchbox.dart';
 import 'package:plant_app/pages/home/components/recomended_plants.dart';
 import 'package:plant_app/pages/home/components/title_with_more_button.dart';
+
+
 
 
 class Body extends StatelessWidget {
@@ -16,12 +19,16 @@ class Body extends StatelessWidget {
         children: [
           headerWithSearch(size: size),
           TitleWithMoreButton(title: "Recomended", press: (){}),
-          RecomendedPlants(),
+          const RecomendedPlants(),
+          TitleWithMoreButton(title: "Featured Plants", press: (){}),
+          const FeaturedPlants(),
         ],
       ),
     );
   }
 }
+
+
 
 
 
