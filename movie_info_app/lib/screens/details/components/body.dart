@@ -22,6 +22,7 @@ class Body extends StatelessWidget {
             children: [
               MovieBackdrop(movie: movie),
               MovieRating(movie: movie),
+              SafeArea(child: BackButton()),
             ],
           ),
         ),

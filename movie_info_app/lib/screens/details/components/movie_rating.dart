@@ -64,7 +64,37 @@ class MovieRating extends StatelessWidget {
                 Text("Rate this", style: Theme.of(context).textTheme.bodyText2,),
               ],
             ),
-            
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: BoxDecoration(
+                    color: COLORMETASCORERATING,
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                  child: Text("${movie.metascoreRating}",
+                  style: const TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500),
+                  ),
+                ),
+                const SizedBox(height: KDEFAULTPADDING / 4),
+                const Text("Metascore",
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                  ),
+                ),
+                const Text("62 critic reviews",
+                  style: TextStyle(
+                    color: KTEXTLIGHTCOLOR,
+                    fontSize: 12,
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),

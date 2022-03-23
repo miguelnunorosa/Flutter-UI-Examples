@@ -8,6 +8,7 @@ const String APP_TITLE = "Movie Info";
 const KSECONDARYCOLOR = Color(0xFFFE6D8E);
 const KTEXTCOLOR = Color(0xFF12153D);
 const KTEXTLIGHTCOLOR = Color(0xFF9A9BB2);
+const COLORMETASCORERATING = Color(0xFF51CF66);
 const KFILLSTARCOLOR = Color(0xFFFCC419);
 const KDEFAULTSHADOW = BoxShadow(
   offset: Offset(0, 4),
