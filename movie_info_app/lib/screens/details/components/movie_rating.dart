@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:movie_info_app/models/movie.dart';
 import 'package:movie_info_app/settings/constants.dart';
 
@@ -21,13 +22,50 @@ class MovieRating extends StatelessWidget {
         height: 100,
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50), topLeft: Radius.circular(50)),
+          borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(50), topLeft: Radius.circular(50)),
           boxShadow: [BoxShadow(
-              offset: Offset(0, 5),
+              offset: const Offset(0, 5),
               blurRadius: 50,
             color: KTEXTCOLOR.withOpacity(0.2),
           ),
           ]
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SvgPicture.asset(ICON_STAR_FILL),
+                const SizedBox(height: KDEFAULTPADDING / 4),
+                RichText(
+                  text: TextSpan(
+                    style: const TextStyle(color: Colors.black),
+                    children: [
+                      TextSpan(
+                        text: "${movie.rating}/",
+                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                      ),
+                      const TextSpan(text: "10\n"),
+                      const TextSpan(
+                        text: "150,212",
+                        style: TextStyle(color: KTEXTLIGHTCOLOR),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SvgPicture.asset(ICON_STAR),
+                const SizedBox(height: KDEFAULTPADDING / 4),
+                Text("Rate this", style: Theme.of(context).textTheme.bodyText2,),
+              ],
+            ),
+            
+          ],
         ),
       ),
     );
