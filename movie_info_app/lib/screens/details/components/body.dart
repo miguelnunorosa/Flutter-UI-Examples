@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie_info_app/models/movie.dart';
 import 'package:movie_info_app/screens/details/components/movie_backdrop.dart';
+import 'package:movie_info_app/screens/details/components/movie_info.dart';
 import 'package:movie_info_app/screens/details/components/movie_rating.dart';
 
 
@@ -22,10 +23,11 @@ class Body extends StatelessWidget {
             children: [
               MovieBackdrop(movie: movie),
               MovieRating(movie: movie),
-              SafeArea(child: BackButton()),
+              const SafeArea(child: BackButton()),
             ],
           ),
         ),
+        MovieInfo(movie: movie),
       ],
     );
   }

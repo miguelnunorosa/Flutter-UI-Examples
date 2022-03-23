@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:movie_info_app/models/movie.dart';
+import 'package:movie_info_app/screens/details/components/movie_info.dart';
 import 'package:movie_info_app/settings/constants.dart';
 
 
