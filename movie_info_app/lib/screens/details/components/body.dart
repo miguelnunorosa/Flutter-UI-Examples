@@ -20,25 +20,28 @@ class Body extends StatelessWidget {
 
     Size size = MediaQuery.of(context).size;
 
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        Container(
-          height: size.height * 0.4, //40% of total screen height
-          child: Stack(
-            children: [
-              MovieBackdrop(movie: movie),
-              MovieRating(movie: movie),
-              const SafeArea(child: BackButton()),
-            ],
+    return SingleChildScrollView(
+      scrollDirection: Axis.vertical,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Container(
+            height: size.height * 0.4, //40% of total screen height
+            child: Stack(
+              children: [
+                MovieBackdrop(movie: movie),
+                MovieRating(movie: movie),
+                const SafeArea(child: BackButton()),
+              ],
+            ),
           ),
-        ),
-        const SizedBox(height: KDEFAULTPADDING),
-        MovieInfo(movie: movie),
-        MovieGenres(movie: movie),
-        MoviePlot(movie: movie),
-        CrewAndCast(movie: movie),
-      ],
+          const SizedBox(height: KDEFAULTPADDING),
+          MovieInfo(movie: movie),
+          MovieGenres(movie: movie),
+          MoviePlot(movie: movie),
+          CrewAndCast(cast: [movie.cast]),
+        ],
+      ),
     );
   }
 }
