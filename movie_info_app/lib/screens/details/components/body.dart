@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:movie_info_app/components/genre_card.dart';
 import 'package:movie_info_app/models/movie.dart';
 import 'package:movie_info_app/screens/details/components/movie_backdrop.dart';
+import 'package:movie_info_app/screens/details/components/movie_genres_list.dart';
 import 'package:movie_info_app/screens/details/components/movie_info.dart';
+import 'package:movie_info_app/screens/details/components/movie_plot.dart';
 import 'package:movie_info_app/screens/details/components/movie_rating.dart';
+import 'package:movie_info_app/settings/constants.dart';
 
 
 class Body extends StatelessWidget {
@@ -27,8 +31,12 @@ class Body extends StatelessWidget {
             ],
           ),
         ),
+        const SizedBox(height: KDEFAULTPADDING),
         MovieInfo(movie: movie),
+        MovieGenres(movie: movie),
+        MoviePlot(movie: movie),
       ],
     );
   }
 }
+
