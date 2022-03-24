@@ -1,16 +1,24 @@
-# movie_info_app
+# Movie Info App
 
-Movie Info App.
+<img align="right" src="https://github.com/miguelnunorosa/Flutter-UI-Examples/blob/main/movie_info_app/assets/images/screenshot_app.png" width=250 height=550 alt="Movie Info"></img>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+Exercise to create a UI for a (fictional) store selling plants (only the UI and navigation between screens were created without passing data between them).
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Clean plant app UI using flutter, the Home page you will get search box than a horizontal list of recommended plants. At the bottom featured plants list. On the details page, a big image with its 4 icons on the right side also add to the cart button.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+<br><br>
+
+## App Structure
+
+- **android**: specific files for Android compilation
+- **assets**: folder with images
+- **ios**: specific files for iOS compilation
+- **lib**: folder with code
+  - **components**: contains the common widgets throughout the app
+  - **pages**: contains all the screens (struct and specific widgets)
+  - **settings**: app's settings
+- **test**: testing methods (not use on this exercice)
+- **pubsec.yaml**: project configuration file
