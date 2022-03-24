@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movie_info_app/components/genre_card.dart';
 import 'package:movie_info_app/models/movie.dart';
 import 'package:movie_info_app/screens/details/components/movie_backdrop.dart';
+import 'package:movie_info_app/screens/details/components/movie_cast_crew.dart';
 import 'package:movie_info_app/screens/details/components/movie_genres_list.dart';
 import 'package:movie_info_app/screens/details/components/movie_info.dart';
 import 'package:movie_info_app/screens/details/components/movie_plot.dart';
@@ -20,6 +21,7 @@ class Body extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Container(
           height: size.height * 0.4, //40% of total screen height
@@ -35,6 +37,7 @@ class Body extends StatelessWidget {
         MovieInfo(movie: movie),
         MovieGenres(movie: movie),
         MoviePlot(movie: movie),
+        CrewAndCast(movie: movie),
       ],
     );
   }
