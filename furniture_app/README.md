@@ -1,16 +1,22 @@
-# furniture_app
+# Movie Info App
 
-A new Flutter project.
+<img align="right" src="https://github.com/miguelnunorosa/Flutter-UI-Examples/blob/main/furniture_app/assets/images/screenshot_app.png" width=250 height=550 alt="Movie Info"></img>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+We design two pages one is the home page and another one is movie info page that will help you to design clear interfaces for movie app faster and easier.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<br><br>
+
+## App Structure
+
+- **android**: specific files for Android compilation
+- **assets**: folder with images
+- **ios**: specific files for iOS compilation
+- **lib**: folder with code
+  - **components**: contains the common widgets throughout the app
+  - **pages**: contains all the screens (struct and specific widgets)
+  - **settings**: app's settings
+- **test**: testing methods (not use on this exercice)
+- **pubsec.yaml**: project configuration file
