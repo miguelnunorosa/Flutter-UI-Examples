@@ -1,4 +1,4 @@
-# Movie Info App
+# Furniture App
 
 <img align="right" src="https://github.com/miguelnunorosa/Flutter-UI-Examples/blob/main/furniture_app/assets/images/screenshot_app.png" width=250 height=550 alt="Movie Info"></img>
 
