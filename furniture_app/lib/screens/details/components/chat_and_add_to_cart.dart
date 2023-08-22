@@ -33,7 +33,7 @@ class ChatAndAddToCart extends StatelessWidget {
           ),
           // it will cover all available spaces
           const Spacer(),
-          /*FlatButton.icon(
+          FlatButton.icon(
             onPressed: () {},
             icon: SvgPicture.asset(
               "assets/icons/shopping-bag.svg",
@@ -43,7 +43,7 @@ class ChatAndAddToCart extends StatelessWidget {
               "Add to Cart",
               style: TextStyle(color: Colors.white),
             ),
-          ),*/
+          ),
         ],
       ),
     );
